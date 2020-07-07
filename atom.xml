@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://YGH0310.github.io</id>
     <title>Gridea</title>
-    <updated>2020-07-03T07:35:31.252Z</updated>
+    <updated>2020-07-07T06:25:30.037Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://YGH0310.github.io"/>
     <link rel="self" href="https://YGH0310.github.io/atom.xml"/>
@@ -10,6 +10,24 @@
     <logo>https://YGH0310.github.io/images/avatar.png</logo>
     <icon>https://YGH0310.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[-bash:fork:无法分配内存]]></title>
+        <id>https://YGH0310.github.io/post/-bashforkwu-fa-fen-pei-nei-cun/</id>
+        <link href="https://YGH0310.github.io/post/-bashforkwu-fa-fen-pei-nei-cun/">
+        </link>
+        <updated>2020-07-07T02:12:08.000Z</updated>
+        <content type="html"><![CDATA[<h6 id="由于系统内存不足需多敲击几次命令才会显示内存使用情况">由于系统内存不足，需多敲击几次命令，才会显示内存使用情况</h6>
+<p>sysctl kernel.pid_max     查看系统最大pid使用数<br>
+ps -eLf | wc -l                 查看当前使用的pid数<br>
+可以看出确实接近系统设置的最大pid个数</p>
+<p>修改系统最大进程数 pid_max，配置文件sysctl.conf在/etc/sysctl.conf中</p>
+<p>①当此生效：      输入   echo  1000000 &gt; /proc/sys/kernel/pid_max</p>
+<p>②永久生效：      输入   echo “kernel.pid_max = 1000000” &gt;&gt; /etc/sysctl.conf  ; sysctl -p</p>
+<p><strong>解决方案：</strong><br>
+cat  /proc/sys/kernel/pid_max<br>
+1000000</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://YGH0310.github.io/post/hello-gridea/</id>

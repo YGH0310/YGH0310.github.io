@@ -9,7 +9,7 @@
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
 <title>Hello Gridea | Gridea</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1593761721544">
+<link rel="shortcut icon" href="/favicon.ico?v=1594103022245">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/pisces.css">
 
@@ -186,19 +186,19 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-count">2</span>
         <span class="site-item-stat-name">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="">
-        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-count">2</span>
         <span class="site-item-stat-name">分类</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-count">2</span>
         <span class="site-item-stat-name">标签</span>
       </a>
     </div>
@@ -574,6 +574,10 @@
   <div class="nav">
     <div class="nav-prev">
       
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="-bash:fork:无法分配内存" href="https://YGH0310.github.io/post/-bashforkwu-fa-fen-pei-nei-cun/">-bash:fork:无法分配内存</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="-bash:fork:无法分配内存" href="https://YGH0310.github.io/post/-bashforkwu-fa-fen-pei-nei-cun/">上一篇</a>
+      
     </div>
     <div class="nav-next">
       
@@ -896,6 +900,21 @@
     <div class="result">
       
       <div class="item">
+        <a class="result-title" href="https://YGH0310.github.io/post/-bashforkwu-fa-fen-pei-nei-cun/"" data-c="
+          &lt;h6 id=&#34;由于系统内存不足需多敲击几次命令才会显示内存使用情况&#34;&gt;由于系统内存不足，需多敲击几次命令，才会显示内存使用情况&lt;/h6&gt;
+&lt;p&gt;sysctl kernel.pid_max     查看系统最大pid使用数&lt;br&gt;
+ps -eLf | wc -l                 查看当前使用的pid数&lt;br&gt;
+可以看出确实接近系统设置的最大pid个数&lt;/p&gt;
+&lt;p&gt;修改系统最大进程数 pid_max，配置文件sysctl.conf在/etc/sysctl.conf中&lt;/p&gt;
+&lt;p&gt;①当此生效：      输入   echo  1000000 &amp;gt; /proc/sys/kernel/pid_max&lt;/p&gt;
+&lt;p&gt;②永久生效：      输入   echo “kernel.pid_max = 1000000” &amp;gt;&amp;gt; /etc/sysctl.conf  ; sysctl -p&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方案：&lt;/strong&gt;&lt;br&gt;
+cat  /proc/sys/kernel/pid_max&lt;br&gt;
+1000000&lt;/p&gt;
+">-bash:fork:无法分配内存</a>
+      </div>
+      
+      <div class="item">
         <a class="result-title" href="https://YGH0310.github.io/post/about/"" data-c="
           &lt;blockquote&gt;
 &lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
@@ -937,7 +956,7 @@
   </div>
 </div>
 <script>
-  // var escape = "[{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h2 id=\&#34;关于本站\&#34;&gt;🏠 关于本站&lt;/h2&gt;\n&lt;h2 id=\&#34;博主是谁\&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;\n&lt;h2 id=\&#34;兴趣爱好\&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;\n&lt;h2 id=\&#34;联系我呀\&#34;&gt;📬 联系我呀&lt;/h2&gt;\n&#34;,&#34;fileName&#34;:&#34;about&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;关于&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2019-01-25 19:09:48&#34;,&#34;dateFormat&#34;:&#34;2019-01-25&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://YGH0310.github.io/post/about/&#34;,&#34;hideInList&#34;:true,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:6000,&#34;words&#34;:31,&#34;minutes&#34;:1},&#34;description&#34;:&#34;\n欢迎来到我的小站呀，很高兴遇见你！🤝\n\n🏠 关于本站\n👨‍💻 博主是谁\n⛹ 兴趣爱好\n📬 联系我呀\n...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99\&#34;&gt;🏠 关于本站&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81\&#34;&gt;👨‍💻 博主是谁&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD\&#34;&gt;⛹ 兴趣爱好&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80\&#34;&gt;📬 联系我呀&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;\n✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;p&gt;&lt;a href=\&#34;https://github.com/getgridea/gridea\&#34;&gt;Github&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;https://gridea.dev/\&#34;&gt;Gridea 主页&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;http://fehey.com/\&#34;&gt;示例网站&lt;/a&gt;&lt;/p&gt;\n&lt;h2 id=\&#34;特性\&#34;&gt;特性👇&lt;/h2&gt;\n&lt;p&gt;📝  你可以使用最酷的 &lt;strong&gt;Markdown&lt;/strong&gt; 语法，进行快速创作&lt;/p&gt;\n&lt;p&gt;🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片&lt;/p&gt;\n&lt;p&gt;🏷️  你可以对文章进行标签分组&lt;/p&gt;\n&lt;p&gt;📋  你可以自定义菜单，甚至可以创建外部链接菜单&lt;/p&gt;\n&lt;p&gt;💻  你可以在 &lt;strong&gt;Windows&lt;/strong&gt;，&lt;strong&gt;MacOS&lt;/strong&gt; 或 &lt;strong&gt;Linux&lt;/strong&gt; 设备上使用此客户端&lt;/p&gt;\n&lt;p&gt;🌎  你可以使用 &lt;strong&gt;𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌&lt;/strong&gt; 或 &lt;strong&gt;Coding Pages&lt;/strong&gt; 向世界展示，未来将支持更多平台&lt;/p&gt;\n&lt;p&gt;💬  你可以进行简单的配置，接入 &lt;a href=\&#34;https://github.com/gitalk/gitalk\&#34;&gt;Gitalk&lt;/a&gt; 或 &lt;a href=\&#34;https://github.com/SukkaW/DisqusJS\&#34;&gt;DisqusJS&lt;/a&gt; 评论系统&lt;/p&gt;\n&lt;p&gt;🇬🇧  你可以使用&lt;strong&gt;中文简体&lt;/strong&gt;或&lt;strong&gt;英语&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力&lt;/p&gt;\n&lt;p&gt;🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步&lt;/p&gt;\n&lt;p&gt;🌱 当然 &lt;strong&gt;Gridea&lt;/strong&gt; 还很年轻，有很多不足，但请相信，它会不停向前 🏃&lt;/p&gt;\n&lt;p&gt;未来，它一定会成为你离不开的伙伴&lt;/p&gt;\n&lt;p&gt;尽情发挥你的才华吧！&lt;/p&gt;\n&lt;p&gt;😘 Enjoy~&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;hello-gridea&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;\n✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;Hello Gridea&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;Gridea&#34;,&#34;slug&#34;:&#34;4G32Zr61X&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://YGH0310.github.io/tag/4G32Zr61X/&#34;}],&#34;date&#34;:&#34;2018-12-12 00:00:00&#34;,&#34;dateFormat&#34;:&#34;2018-12-12&#34;,&#34;feature&#34;:&#34;https://YGH0310.github.io/post-images/hello-gridea.png&#34;,&#34;link&#34;:&#34;https://YGH0310.github.io/post/hello-gridea/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:62000,&#34;words&#34;:298,&#34;minutes&#34;:2},&#34;description&#34;:&#34;👏  欢迎使用 Gridea ！\n✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...\n\nGithub\nGridea 主页\n示例网站\n特性👇\n📝  你可以使用最酷的 Markdo...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%89%B9%E6%80%A7\&#34;&gt;特性👇&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;}]";
+  // var escape = "[{&#34;content&#34;:&#34;&lt;h6 id=\&#34;由于系统内存不足需多敲击几次命令才会显示内存使用情况\&#34;&gt;由于系统内存不足，需多敲击几次命令，才会显示内存使用情况&lt;/h6&gt;\n&lt;p&gt;sysctl kernel.pid_max     查看系统最大pid使用数&lt;br&gt;\nps -eLf | wc -l                 查看当前使用的pid数&lt;br&gt;\n可以看出确实接近系统设置的最大pid个数&lt;/p&gt;\n&lt;p&gt;修改系统最大进程数 pid_max，配置文件sysctl.conf在/etc/sysctl.conf中&lt;/p&gt;\n&lt;p&gt;①当此生效：      输入   echo  1000000 &amp;gt; /proc/sys/kernel/pid_max&lt;/p&gt;\n&lt;p&gt;②永久生效：      输入   echo “kernel.pid_max = 1000000” &amp;gt;&amp;gt; /etc/sysctl.conf  ; sysctl -p&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;解决方案：&lt;/strong&gt;&lt;br&gt;\ncat  /proc/sys/kernel/pid_max&lt;br&gt;\n1000000&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;-bashforkwu-fa-fen-pei-nei-cun&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;-bash:fork:无法分配内存&#34;,&#34;tags&#34;:[{&#34;index&#34;:-1,&#34;name&#34;:&#34;运维_那些事儿&#34;,&#34;slug&#34;:&#34;t04ZChDgf&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://YGH0310.github.io/tag/t04ZChDgf/&#34;}],&#34;date&#34;:&#34;2020-07-07 10:12:08&#34;,&#34;dateFormat&#34;:&#34;2020-07-07&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://YGH0310.github.io/post/-bashforkwu-fa-fen-pei-nei-cun/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:33000,&#34;words&#34;:131,&#34;minutes&#34;:1},&#34;description&#34;:&#34;由于系统内存不足，需多敲击几次命令，才会显示内存使用情况\nsysctl kernel.pid_max     查看系统最大pid使用数\nps -eLf | wc -l                 查看当前使用的pid数\n可以看出确实接近...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%94%B1%E4%BA%8E%E7%B3%BB%E7%BB%9F%E5%86%85%E5%AD%98%E4%B8%8D%E8%B6%B3%E9%9C%80%E5%A4%9A%E6%95%B2%E5%87%BB%E5%87%A0%E6%AC%A1%E5%91%BD%E4%BB%A4%E6%89%8D%E4%BC%9A%E6%98%BE%E7%A4%BA%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5\&#34;&gt;由于系统内存不足，需多敲击几次命令，才会显示内存使用情况&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h2 id=\&#34;关于本站\&#34;&gt;🏠 关于本站&lt;/h2&gt;\n&lt;h2 id=\&#34;博主是谁\&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;\n&lt;h2 id=\&#34;兴趣爱好\&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;\n&lt;h2 id=\&#34;联系我呀\&#34;&gt;📬 联系我呀&lt;/h2&gt;\n&#34;,&#34;fileName&#34;:&#34;about&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;关于&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2019-01-25 19:09:48&#34;,&#34;dateFormat&#34;:&#34;2019-01-25&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://YGH0310.github.io/post/about/&#34;,&#34;hideInList&#34;:true,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:6000,&#34;words&#34;:31,&#34;minutes&#34;:1},&#34;description&#34;:&#34;\n欢迎来到我的小站呀，很高兴遇见你！🤝\n\n🏠 关于本站\n👨‍💻 博主是谁\n⛹ 兴趣爱好\n📬 联系我呀\n...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99\&#34;&gt;🏠 关于本站&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81\&#34;&gt;👨‍💻 博主是谁&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD\&#34;&gt;⛹ 兴趣爱好&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80\&#34;&gt;📬 联系我呀&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;\n✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;p&gt;&lt;a href=\&#34;https://github.com/getgridea/gridea\&#34;&gt;Github&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;https://gridea.dev/\&#34;&gt;Gridea 主页&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;http://fehey.com/\&#34;&gt;示例网站&lt;/a&gt;&lt;/p&gt;\n&lt;h2 id=\&#34;特性\&#34;&gt;特性👇&lt;/h2&gt;\n&lt;p&gt;📝  你可以使用最酷的 &lt;strong&gt;Markdown&lt;/strong&gt; 语法，进行快速创作&lt;/p&gt;\n&lt;p&gt;🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片&lt;/p&gt;\n&lt;p&gt;🏷️  你可以对文章进行标签分组&lt;/p&gt;\n&lt;p&gt;📋  你可以自定义菜单，甚至可以创建外部链接菜单&lt;/p&gt;\n&lt;p&gt;💻  你可以在 &lt;strong&gt;Windows&lt;/strong&gt;，&lt;strong&gt;MacOS&lt;/strong&gt; 或 &lt;strong&gt;Linux&lt;/strong&gt; 设备上使用此客户端&lt;/p&gt;\n&lt;p&gt;🌎  你可以使用 &lt;strong&gt;𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌&lt;/strong&gt; 或 &lt;strong&gt;Coding Pages&lt;/strong&gt; 向世界展示，未来将支持更多平台&lt;/p&gt;\n&lt;p&gt;💬  你可以进行简单的配置，接入 &lt;a href=\&#34;https://github.com/gitalk/gitalk\&#34;&gt;Gitalk&lt;/a&gt; 或 &lt;a href=\&#34;https://github.com/SukkaW/DisqusJS\&#34;&gt;DisqusJS&lt;/a&gt; 评论系统&lt;/p&gt;\n&lt;p&gt;🇬🇧  你可以使用&lt;strong&gt;中文简体&lt;/strong&gt;或&lt;strong&gt;英语&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力&lt;/p&gt;\n&lt;p&gt;🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步&lt;/p&gt;\n&lt;p&gt;🌱 当然 &lt;strong&gt;Gridea&lt;/strong&gt; 还很年轻，有很多不足，但请相信，它会不停向前 🏃&lt;/p&gt;\n&lt;p&gt;未来，它一定会成为你离不开的伙伴&lt;/p&gt;\n&lt;p&gt;尽情发挥你的才华吧！&lt;/p&gt;\n&lt;p&gt;😘 Enjoy~&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;hello-gridea&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;\n✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;Hello Gridea&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;Gridea&#34;,&#34;slug&#34;:&#34;4G32Zr61X&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://YGH0310.github.io/tag/4G32Zr61X/&#34;}],&#34;date&#34;:&#34;2018-12-12 00:00:00&#34;,&#34;dateFormat&#34;:&#34;2018-12-12&#34;,&#34;feature&#34;:&#34;https://YGH0310.github.io/post-images/hello-gridea.png&#34;,&#34;link&#34;:&#34;https://YGH0310.github.io/post/hello-gridea/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:62000,&#34;words&#34;:298,&#34;minutes&#34;:2},&#34;description&#34;:&#34;👏  欢迎使用 Gridea ！\n✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...\n\nGithub\nGridea 主页\n示例网站\n特性👇\n📝  你可以使用最酷的 Markdo...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%89%B9%E6%80%A7\&#34;&gt;特性👇&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;}]";
   // var json = escape.substr(1, escape.length - 2);
   // var datas = json.split(',');
   // for (let i=0; i < datas.length; i++) {
