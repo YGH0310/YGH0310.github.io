@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://YGH0310.github.io</id>
     <title>O&amp;M Career</title>
-    <updated>2020-07-07T07:43:55.696Z</updated>
+    <updated>2020-09-21T10:04:21.897Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://YGH0310.github.io"/>
     <link rel="self" href="https://YGH0310.github.io/atom.xml"/>
@@ -10,6 +10,113 @@
     <logo>https://YGH0310.github.io/images/avatar.png</logo>
     <icon>https://YGH0310.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, O&amp;M Career</rights>
+    <entry>
+        <title type="html"><![CDATA[盘点支持 Linux 的国产软件]]></title>
+        <id>https://YGH0310.github.io/post/pan-dian-zhi-chi-linux-de-ruan-jian/</id>
+        <link href="https://YGH0310.github.io/post/pan-dian-zhi-chi-linux-de-ruan-jian/">
+        </link>
+        <updated>2020-09-21T07:05:25.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="网易云音乐"><strong>网易云音乐</strong></h2>
+<p><img src="https://YGH0310.github.io/post-images/1600672152825.png" alt="" loading="lazy"><br>
+下载链接：https://music.163.com/#/download<br>
+支持平台：deepin15（64位）ubuntu18.04（64位）<br>
+<strong>搜狗输入法</strong><br>
+<img src="https://YGH0310.github.io/post-images/1600672280787.png" alt="" loading="lazy"><br>
+下载链接：https://pinyin.sogou.com/linux<br>
+支持平台：Ubuntu、Ubuntukylin 2004 / 1910 / 1804 / 1604<br>
+2020-08-24  搜狗输入法 for Linux v2.3.2.07<br>
+1、稳定支持Ubuntu2004系统。<br>
+2、全新支持高分屏显示。<br>
+3、整合拼音和五笔输入法，一键切换，更方便。<br>
+4、优化输入法整体架构，大幅提升输入法性能。<br>
+5、优化输入法依赖库。</p>
+<h2 id="有道词典"><strong>有道词典</strong></h2>
+<p><img src="https://YGH0310.github.io/post-images/1600672583009.png" alt="" loading="lazy"><br>
+下载链接：http://cidian.youdao.com/multi.html#linuxAll<br>
+支持平台：Deepin(amd64)版 银河麒麟(arm64)版 中标麒麟龙芯(mips64)版 Ubuntu(amd64)版 中标麒麟兆芯(x86_64)版 二进制软件包(32位) 二进制软件包(64位)</p>
+<h2 id="wps"><strong>WPS</strong></h2>
+<p><img src="https://YGH0310.github.io/post-images/1600672920839.png" alt="" loading="lazy"><br>
+下载链接：https://www.wps.cn/product/wpslinux<br>
+支持平台：根据需要下载deb/rpm格式的安装包<br>
+WPS Office 2019 For Linux（11.1.0.9615）更新说明<br>
+WPS公共：<br>
+优化界面绘制相关api的调用效率<br>
+适配ibus和fcitx框架的输入法，解决无法输入中文，预输入显示等问题<br>
+支持阿拉伯语、藏语的排版和编辑<br>
+支持插入PDF、压缩文件的OLE对象<br>
+解决Fedora平台打印机无法使用的问题<br>
+修复fcitx5输入法及wayland下的ibus输入法无法输入中文的问题<br>
+WPS文字：<br>
+支持插入长度为3个字符的带圈字符及长度为3个字符的带圈项目编号<br>
+优化大表格滚屏卡顿、排序耗时等性能问题<br>
+WPS演示：<br>
+升级ffmpeg版本，优化音频、视频的插入、播放、裁剪等功能</p>
+<h2 id="qqlinux版"><strong>QQ·Linux版</strong></h2>
+<p><img src="https://YGH0310.github.io/post-images/1600674235373.png" alt="" loading="lazy"><br>
+下载链接：https://im.qq.com/linuxqq/index.html<br>
+支持架构  可支持格式<br>
+x64         shell   rpm   deb   pacman<br>
+ARM64       shell   rpm   deb<br>
+MIPS64      shell   rpm deb<br>
+安装帮助：https://im.qq.com/linuxqq/download.html<br>
+Linux QQ 2.0.0 Beta2  2020/4/1<br>
+- 优化稳定性；<br>
+- 增加多人聊天会话支持。</p>
+<h2 id="百度云盘"><strong>百度云盘</strong></h2>
+<p><img src="https://YGH0310.github.io/post-images/1600674489266.png" alt="" loading="lazy"><br>
+下载链接：https://pan.baidu.com/download<br>
+大小：106 M         版本：Linux版 V3.4.1<br>
+适应系统：中标麒麟桌面操作系统软件（兆芯版） V7.0、Ubuntu V18.04、统信UOS V20<br>
+更新时间：2020-09-09<br>
+安装包格式：rpm     deb</p>
+<h2 id="360安全浏览器"><strong>360安全浏览器</strong></h2>
+<p><img src="https://YGH0310.github.io/post-images/1600674724380.png" alt="" loading="lazy"><br>
+下载链接：https://browser.360.cn/se/linux/index.html<br>
+版本号：V10.2.1006.16<br>
+支持平台：<br>
+银河麒麟 / deepin / 普华OS/中科方德 / 凝思磐石<br>
+中标麒麟 / 红旗Linux / 万里红/一铭OS</p>
+<h2 id="坚果云"><strong>坚果云</strong></h2>
+<p><img src="https://YGH0310.github.io/post-images/1600674967204.png" alt="" loading="lazy"><br>
+下载链接：https://www.jianguoyun.com/s/downloads<br>
+支持系统：Ubuntu  Fedora    Debian<br>
+安装帮助：https://www.jianguoyun.com/s/downloads/linux<br>
+<strong>腾讯视频</strong><br>
+<img src="https://YGH0310.github.io/post-images/1600675352822.png" alt="" loading="lazy"><br>
+下载链接：http://v.qq.com/download.html#Linux<br>
+大小：10.0MB 版本号：V1.0.10 更新日期：2019-12-27<br>
+文件格式：rpm   deb</p>
+<h2 id="360安全卫士"><strong>360安全卫士</strong></h2>
+<p><img src="https://YGH0310.github.io/post-images/1600675593888.png" alt="" loading="lazy"><br>
+下载链接：http://chinaossafe.360.cn/index.html<br>
+支持平台：Deepin    中标麒麟       QOMO</p>
+<h2 id="中望cad"><strong>中望CAD</strong></h2>
+<p><img src="https://YGH0310.github.io/post-images/1600675819048.png" alt="" loading="lazy"><br>
+下载链接：https://www.zwcad.com/product/cad_linux.html<br>
+支持系统：UOS   KYLIN   deepin  中科麒麟  ……<br>
+支持CPU：鲲鹏、飞腾、兆芯、海光、龙芯  ……<br>
+文件格式：rpm   deb</p>
+<h2 id="立创eda"><strong>立创EDA</strong></h2>
+<p><img src="https://YGH0310.github.io/post-images/1600680502363.png" alt="" loading="lazy"><br>
+下载链接：https://lceda.cn/page/download<br>
+<strong>VNote</strong><br>
+<img src="https://YGH0310.github.io/post-images/1600680683110.png" alt="" loading="lazy"><br>
+一个更懂程序员和Markdown的笔记！<br>
+下载链接：https://tamlok.gitee.io/vnote/zh_cn/#!downloads.md#toc_4</p>
+<h2 id="listen-1"><strong>Listen 1</strong></h2>
+<p><img src="https://YGH0310.github.io/post-images/1600680877050.png" alt="" loading="lazy"><br>
+下载链接：http://listen1.github.io/listen1/</p>
+<h2 id="已知的其他软件但官网未找到讯飞输入法-微信">已知的其他软件但官网未找到：讯飞输入法、微信……</h2>
+<p>期待更多的国产软件适配！！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CentOS_8 搭建 Zabbix_5]]></title>
+        <id>https://YGH0310.github.io/post/centos_8-da-jian-zabbix_5/</id>
+        <link href="https://YGH0310.github.io/post/centos_8-da-jian-zabbix_5/">
+        </link>
+        <updated>2020-09-18T03:32:14.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[-bash:fork:无法分配内存]]></title>
         <id>https://YGH0310.github.io/post/-bashforkwu-fa-fen-pei-nei-cun/</id>
