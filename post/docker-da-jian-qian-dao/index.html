@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="My Blog">
 <meta name="theme-color" content="#000">
-<title>CentOS_8 搭建 Zabbix_5 | O&amp;M Career</title>
+<title>Docker 搭建签到 | O&amp;M Career</title>
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/YGH0310/YGH0310.github.io@master/favicon.ico?v=1611127360604">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/YGH0310/YGH0310.github.io@master/media/css/pisces.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/YGH0310/YGH0310.github.io@master/media/fonts/font-awesome.css">
@@ -38,7 +38,7 @@
 
 
 
-  <meta name="description" content="CentOS_8 搭建 Zabbix_5" />
+  <meta name="description" content="Docker 搭建签到" />
   <meta name="keywords" content="" />
 </head>
 
@@ -316,8 +316,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://YGH0310.github.io/post/centos_8-da-jian-zabbix_5/">
-      CentOS_8 搭建 Zabbix_5
+    <a class="post-title-link" href="https://YGH0310.github.io/post/docker-da-jian-qian-dao/">
+      Docker 搭建签到
     </a>
   </h1>
   <div class="post-meta">
@@ -325,24 +325,60 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2020-09-18 11:32:14">2020-09-18</span>
+      <span class="publish-time" data-t="2021-01-20 15:19:15">2021-01-20</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>0<span class="language" data-lan="minute">分钟</span></span>
+      <span>2<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>0<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>261<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              
+              <p>1、若您安装过<strong>docker</strong>，需要先删掉，之后再安装依赖:</p>
+<pre><code class="language-shell">sudo yum remove docker docker-common docker-selinux docker-engine
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+</code></pre>
+<p>2、根据版本不同，下载repo文件。您使用的发行版： CentOS/RHEL</p>
+<pre><code class="language-shell">wget -O /etc/yum.repos.d/docker-ce.repo https://mirrors.huaweicloud.com/docker-ce/linux/centos/docker-ce.repo
+</code></pre>
+<p>​	软件仓库地址替换为：</p>
+<pre><code class="language-shell">sudo sed -i 's+download.docker.com+mirrors.huaweicloud.com/docker-ce+' /etc/yum.repos.d/docker-ce.repo
+</code></pre>
+<p>3、更新索引文件并安装</p>
+<pre><code class="language-shell">sudo yum makecache fast
+sudo yum install docker-ce
+</code></pre>
+<p>4、启动Docker</p>
+<pre><code class="language-shell">systemctl  start docker
+systemctl enable docker
+</code></pre>
+<blockquote>
+<p>docker镜像地址：https://hub.docker.com/r/asdaragon/qiandao<br>
+项目地址：https://github.com/AragonSnow/qiandao</p>
+</blockquote>
+<p>5、拉取镜像	Docker Pull Command</p>
+<pre><code class="language-shell">docker pull asdaragon/qiandao
+</code></pre>
+<p>6、运行签到容器，挂载宿主机目录</p>
+<pre><code class="language-shell">docker run -d --name qiandao -p 12345:80 -v $(pwd)/qiandao/config:/usr/src/app/config  asdaragon/qiandao
+</code></pre>
+<blockquote>
+<p>数据库备份指令：<code>docker cp 容器名:/usr/src/app/config/database.db .</code><br>
+数据库恢复指令：<code>docker cp database.db 容器名:/usr/src/app/config/</code></p>
+</blockquote>
+<p>项目引用:<br>
+https://gitee.com/qiandao-today/templates<br>
+https://post.smzdm.com/p/a83g4wxl/<br>
+https://qiandao.xiguan.net/tpls/public</p>
+
             </div>
             
             
@@ -354,7 +390,7 @@
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://YGH0310.github.io/post/centos_8-da-jian-zabbix_5/" title="CentOS_8 搭建 Zabbix_5">https://YGH0310.github.io/post/centos_8-da-jian-zabbix_5/</a>
+      <a href="https://YGH0310.github.io/post/docker-da-jian-qian-dao/" title="Docker 搭建签到">https://YGH0310.github.io/post/docker-da-jian-qian-dao/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -367,15 +403,11 @@
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="盘点支持 Linux 的国产软件" href="https://YGH0310.github.io/post/pan-dian-zhi-chi-linux-de-ruan-jian/">盘点支持 Linux 的国产软件</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="盘点支持 Linux 的国产软件" href="https://YGH0310.github.io/post/pan-dian-zhi-chi-linux-de-ruan-jian/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="-bash:fork:无法分配内存" href="https://YGH0310.github.io/post/-bashforkwu-fa-fen-pei-nei-cun/">-bash:fork:无法分配内存</a>
-        <a class="nav-mobile-next" title="-bash:fork:无法分配内存" href="https://YGH0310.github.io/post/-bashforkwu-fa-fen-pei-nei-cun/">下一篇</a>
+        <a class="nav-pc-next" title="盘点支持 Linux 的国产软件" href="https://YGH0310.github.io/post/pan-dian-zhi-chi-linux-de-ruan-jian/">盘点支持 Linux 的国产软件</a>
+        <a class="nav-mobile-next" title="盘点支持 Linux 的国产软件" href="https://YGH0310.github.io/post/pan-dian-zhi-chi-linux-de-ruan-jian/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
