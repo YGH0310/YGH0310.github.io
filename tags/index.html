@@ -9,7 +9,7 @@
 <meta name="description" content="My Blog">
 <meta name="theme-color" content="#000">
 <title>O&amp;M Career</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/YGH0310/YGH0310.github.io@master/favicon.ico?v=1611127360604">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/YGH0310/YGH0310.github.io@master/favicon.ico?v=1612498064954">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/YGH0310/YGH0310.github.io@master/media/css/pisces.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/YGH0310/YGH0310.github.io@master/media/fonts/font-awesome.css">
 <link
@@ -133,6 +133,12 @@
             
           
           
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
         </ul>
       </nav>
     </div>
@@ -171,13 +177,13 @@
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/YGH0310/YGH0310.github.io@master/images/avatar.png"/>
-    <p class="site-author-name">运维小白</p>
+    <p class="site-author-name">YGH</p>
     
     <div class="site-description right-motion">
       
       
       
-        <p>Linux云计算~加载中！</p>
+        <p> 加载中~</p>
       
       
     </div>
@@ -518,6 +524,340 @@
 </script>
   </div>
 </body>
+
+<div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YGH0310.github.io/post/docker-da-jian-qian-dao/"" data-c="
+          &lt;p&gt;1、若您安装过&lt;strong&gt;docker&lt;/strong&gt;，需要先删掉，之后再安装依赖:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;sudo yum remove docker docker-common docker-selinux docker-engine
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2、根据版本不同，下载repo文件。您使用的发行版： CentOS/RHEL&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;wget -O /etc/yum.repos.d/docker-ce.repo https://mirrors.huaweicloud.com/docker-ce/linux/centos/docker-ce.repo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;​	软件仓库地址替换为：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;sudo sed -i &#39;s+download.docker.com+mirrors.huaweicloud.com/docker-ce+&#39; /etc/yum.repos.d/docker-ce.repo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;3、更新索引文件并安装&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;sudo yum makecache fast
+sudo yum install docker-ce
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;4、启动Docker&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;systemctl  start docker
+systemctl enable docker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;docker镜像地址：https://hub.docker.com/r/asdaragon/qiandao&lt;br&gt;
+项目地址：https://github.com/AragonSnow/qiandao&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;5、拉取镜像	Docker Pull Command&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;docker pull asdaragon/qiandao
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;6、运行签到容器，挂载宿主机目录&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;docker run -d --name qiandao -p 12345:80 -v $(pwd)/qiandao/config:/usr/src/app/config  asdaragon/qiandao
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;数据库备份指令：&lt;code&gt;docker cp 容器名:/usr/src/app/config/database.db .&lt;/code&gt;&lt;br&gt;
+数据库恢复指令：&lt;code&gt;docker cp database.db 容器名:/usr/src/app/config/&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;项目引用:&lt;br&gt;
+https://gitee.com/qiandao-today/templates&lt;br&gt;
+https://post.smzdm.com/p/a83g4wxl/&lt;br&gt;
+https://qiandao.xiguan.net/tpls/public&lt;/p&gt;
+">Docker 搭建签到</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YGH0310.github.io/post/pan-dian-zhi-chi-linux-de-ruan-jian/"" data-c="
+          &lt;h2 id=&#34;网易云音乐&#34;&gt;&lt;strong&gt;网易云音乐&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600672152825.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：https://music.163.com/#/download&lt;br&gt;
+支持平台：deepin15（64位）ubuntu18.04（64位）&lt;/p&gt;
+&lt;h2 id=&#34;搜狗输入法&#34;&gt;&lt;strong&gt;搜狗输入法&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600672280787.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：https://pinyin.sogou.com/linux&lt;br&gt;
+支持平台：Ubuntu、Ubuntukylin 2004 / 1910 / 1804 / 1604&lt;br&gt;
+2020-08-24  搜狗输入法 for Linux v2.3.2.07&lt;br&gt;
+1、稳定支持Ubuntu2004系统。&lt;br&gt;
+2、全新支持高分屏显示。&lt;br&gt;
+3、整合拼音和五笔输入法，一键切换，更方便。&lt;br&gt;
+4、优化输入法整体架构，大幅提升输入法性能。&lt;br&gt;
+5、优化输入法依赖库。&lt;/p&gt;
+&lt;h2 id=&#34;有道词典&#34;&gt;&lt;strong&gt;有道词典&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600672583009.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：http://cidian.youdao.com/multi.html#linuxAll&lt;br&gt;
+支持平台：Deepin(amd64)版 银河麒麟(arm64)版 中标麒麟龙芯(mips64)版 Ubuntu(amd64)版&lt;br&gt;
+中标麒麟兆芯(x86_64)版 二进制软件包(32位) 二进制软件包(64位)&lt;/p&gt;
+&lt;h2 id=&#34;wps&#34;&gt;&lt;strong&gt;WPS&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600672920839.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：https://www.wps.cn/product/wpslinux&lt;br&gt;
+支持平台：根据需要下载deb/rpm格式的安装包&lt;br&gt;
+WPS Office 2019 For Linux（11.1.0.9615）更新说明&lt;br&gt;
+WPS公共：&lt;br&gt;
+优化界面绘制相关api的调用效率&lt;br&gt;
+适配ibus和fcitx框架的输入法，解决无法输入中文，预输入显示等问题&lt;br&gt;
+支持阿拉伯语、藏语的排版和编辑&lt;br&gt;
+支持插入PDF、压缩文件的OLE对象&lt;br&gt;
+解决Fedora平台打印机无法使用的问题&lt;br&gt;
+修复fcitx5输入法及wayland下的ibus输入法无法输入中文的问题&lt;br&gt;
+WPS文字：&lt;br&gt;
+支持插入长度为3个字符的带圈字符及长度为3个字符的带圈项目编号&lt;br&gt;
+优化大表格滚屏卡顿、排序耗时等性能问题&lt;br&gt;
+WPS演示：&lt;br&gt;
+升级ffmpeg版本，优化音频、视频的插入、播放、裁剪等功能&lt;/p&gt;
+&lt;h2 id=&#34;qqlinux版&#34;&gt;&lt;strong&gt;QQ·Linux版&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600674235373.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：https://im.qq.com/linuxqq/index.html&lt;br&gt;
+支持架构  可支持格式&lt;br&gt;
+x64         shell   rpm   deb   pacman&lt;br&gt;
+ARM64       shell   rpm   deb&lt;br&gt;
+MIPS64      shell   rpm deb&lt;br&gt;
+安装帮助：https://im.qq.com/linuxqq/download.html&lt;br&gt;
+Linux QQ 2.0.0 Beta2  2020/4/1&lt;br&gt;
+- 优化稳定性；&lt;br&gt;
+- 增加多人聊天会话支持。&lt;/p&gt;
+&lt;h2 id=&#34;百度云盘&#34;&gt;&lt;strong&gt;百度云盘&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600674489266.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：https://pan.baidu.com/download&lt;br&gt;
+大小：106 M         版本：Linux版 V3.4.1&lt;br&gt;
+适应系统：中标麒麟桌面操作系统软件（兆芯版） V7.0、Ubuntu V18.04、统信UOS V20&lt;br&gt;
+更新时间：2020-09-09&lt;br&gt;
+安装包格式：rpm     deb&lt;/p&gt;
+&lt;h2 id=&#34;360安全浏览器&#34;&gt;&lt;strong&gt;360安全浏览器&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600674724380.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：https://browser.360.cn/se/linux/index.html&lt;br&gt;
+版本号：V10.2.1006.16&lt;br&gt;
+支持平台：&lt;br&gt;
+银河麒麟 / deepin / 普华OS/中科方德 / 凝思磐石&lt;br&gt;
+中标麒麟 / 红旗Linux / 万里红/一铭OS&lt;/p&gt;
+&lt;h2 id=&#34;坚果云&#34;&gt;&lt;strong&gt;坚果云&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600674967204.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：https://www.jianguoyun.com/s/downloads&lt;br&gt;
+支持系统：Ubuntu  Fedora    Debian&lt;br&gt;
+安装帮助：https://www.jianguoyun.com/s/downloads/linux&lt;/p&gt;
+&lt;h2 id=&#34;腾讯视频&#34;&gt;&lt;strong&gt;腾讯视频&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600675352822.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：http://v.qq.com/download.html#Linux&lt;br&gt;
+大小：10.0MB 版本号：V1.0.10 更新日期：2019-12-27&lt;br&gt;
+文件格式：rpm   deb&lt;/p&gt;
+&lt;h2 id=&#34;360安全卫士&#34;&gt;&lt;strong&gt;360安全卫士&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600675593888.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：http://chinaossafe.360.cn/index.html&lt;br&gt;
+支持平台：Deepin    中标麒麟       QOMO&lt;/p&gt;
+&lt;h2 id=&#34;中望cad&#34;&gt;&lt;strong&gt;中望CAD&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600675819048.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：https://www.zwcad.com/product/cad_linux.html&lt;br&gt;
+支持系统：UOS   KYLIN   deepin  中科麒麟  ……&lt;br&gt;
+支持CPU：鲲鹏、飞腾、兆芯、海光、龙芯  ……&lt;br&gt;
+文件格式：rpm   deb&lt;/p&gt;
+&lt;h2 id=&#34;立创eda&#34;&gt;&lt;strong&gt;立创EDA&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600680502363.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：https://lceda.cn/page/download&lt;/p&gt;
+&lt;h2 id=&#34;vnote&#34;&gt;&lt;strong&gt;VNote&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600680683110.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+一个更懂程序员和Markdown的笔记！&lt;br&gt;
+下载链接：https://tamlok.gitee.io/vnote/zh_cn/#!downloads.md#toc_4&lt;/p&gt;
+&lt;h2 id=&#34;listen-1&#34;&gt;&lt;strong&gt;Listen 1&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://YGH0310.github.io/post-images/1600680877050.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+下载链接：http://listen1.github.io/listen1/&lt;/p&gt;
+&lt;h2 id=&#34;已知的其他软件但官网未找到讯飞输入法-微信&#34;&gt;已知的其他软件但官网未找到：讯飞输入法、微信……&lt;/h2&gt;
+&lt;p&gt;期待更多的国产软件适配！！&lt;/p&gt;
+">盘点支持 Linux 的国产软件</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YGH0310.github.io/post/centos_8-da-jian-zabbix_5/"" data-c="
+          ">CentOS_8 搭建 Zabbix_5</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YGH0310.github.io/post/-bashforkwu-fa-fen-pei-nei-cun/"" data-c="
+          &lt;h6 id=&#34;由于系统内存不足需多敲击几次命令才会显示内存使用情况&#34;&gt;由于系统内存不足，需多敲击几次命令，才会显示内存使用情况&lt;/h6&gt;
+&lt;p&gt;sysctl kernel.pid_max     查看系统最大pid使用数&lt;br&gt;
+ps -eLf | wc -l                 查看当前使用的pid数&lt;br&gt;
+可以看出确实接近系统设置的最大pid个数&lt;/p&gt;
+&lt;p&gt;修改系统最大进程数 pid_max，配置文件sysctl.conf在/etc/sysctl.conf中&lt;/p&gt;
+&lt;p&gt;①当此生效：      输入   echo  1000000 &amp;gt; /proc/sys/kernel/pid_max&lt;/p&gt;
+&lt;p&gt;②永久生效：      输入   echo “kernel.pid_max = 1000000” &amp;gt;&amp;gt; /etc/sysctl.conf  ; sysctl -p&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方案：&lt;/strong&gt;&lt;br&gt;
+cat  /proc/sys/kernel/pid_max&lt;br&gt;
+1000000&lt;/p&gt;
+">-bash:fork:无法分配内存</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YGH0310.github.io/post/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
+&lt;h2 id=&#34;兴趣爱好&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;
+&lt;h2 id=&#34;联系我呀&#34;&gt;📬 联系我呀&lt;/h2&gt;
+">关于</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://YGH0310.github.io/post/hello-gridea/"" data-c="
+          &lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
+✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/getgridea/gridea&#34;&gt;Github&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gridea.dev/&#34;&gt;Gridea 主页&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://fehey.com/&#34;&gt;示例网站&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;特性&#34;&gt;特性👇&lt;/h2&gt;
+&lt;p&gt;📝  你可以使用最酷的 &lt;strong&gt;Markdown&lt;/strong&gt; 语法，进行快速创作&lt;/p&gt;
+&lt;p&gt;🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片&lt;/p&gt;
+&lt;p&gt;🏷️  你可以对文章进行标签分组&lt;/p&gt;
+&lt;p&gt;📋  你可以自定义菜单，甚至可以创建外部链接菜单&lt;/p&gt;
+&lt;p&gt;💻  你可以在 &lt;strong&gt;Windows&lt;/strong&gt;，&lt;strong&gt;MacOS&lt;/strong&gt; 或 &lt;strong&gt;Linux&lt;/strong&gt; 设备上使用此客户端&lt;/p&gt;
+&lt;p&gt;🌎  你可以使用 &lt;strong&gt;𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌&lt;/strong&gt; 或 &lt;strong&gt;Coding Pages&lt;/strong&gt; 向世界展示，未来将支持更多平台&lt;/p&gt;
+&lt;p&gt;💬  你可以进行简单的配置，接入 &lt;a href=&#34;https://github.com/gitalk/gitalk&#34;&gt;Gitalk&lt;/a&gt; 或 &lt;a href=&#34;https://github.com/SukkaW/DisqusJS&#34;&gt;DisqusJS&lt;/a&gt; 评论系统&lt;/p&gt;
+&lt;p&gt;🇬🇧  你可以使用&lt;strong&gt;中文简体&lt;/strong&gt;或&lt;strong&gt;英语&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力&lt;/p&gt;
+&lt;p&gt;🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步&lt;/p&gt;
+&lt;p&gt;🌱 当然 &lt;strong&gt;Gridea&lt;/strong&gt; 还很年轻，有很多不足，但请相信，它会不停向前 🏃&lt;/p&gt;
+&lt;p&gt;未来，它一定会成为你离不开的伙伴&lt;/p&gt;
+&lt;p&gt;尽情发挥你的才华吧！&lt;/p&gt;
+&lt;p&gt;😘 Enjoy~&lt;/p&gt;
+">Hello Gridea</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
 
 <input hidden id="copy" />
 <script>

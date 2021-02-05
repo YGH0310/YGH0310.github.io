@@ -2112,7 +2112,7 @@ body {
       border-bottom-color: #222;
     }
     .nav-toggle .line {
-      background-color: undefined !important;
+      background-color:  !important;
     }
       .nav-item a {
         color:  #555;
